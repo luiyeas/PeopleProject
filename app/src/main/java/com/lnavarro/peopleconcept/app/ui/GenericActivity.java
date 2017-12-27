@@ -1,0 +1,37 @@
+package com.lnavarro.peopleconcept.app.ui;
+
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
+
+import com.lnavarro.peopleconcept.app.navigator.Navigator;
+
+import javax.inject.Inject;
+
+/**
+ * Created by luis on 1/11/17.
+ */
+
+public abstract class GenericActivity extends AppCompatActivity {
+
+    @Inject
+    protected Navigator navigator;
+
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
+
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        initNavigator();
+    }
+
+    private void initNavigator() {
+        navigator.setActivity(this);
+    }
+
+}

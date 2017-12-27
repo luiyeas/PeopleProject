@@ -93,13 +93,13 @@
                             android:drawablePadding="@dimen/normal_padding"
                             android:fontFamily="monospace"
                             android:gravity="center_vertical"
-                            android:text="@string/real_name_text"
+                            android:text="@string/name_text"
                             android:textColor="@color/black_text"
                             android:textSize="@dimen/default_text_subtitle_size"
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/real_name_value_textview"
+                            android:id="@+id/name_text_view"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="@dimen/detail_content_value_left_margin"
@@ -123,13 +123,13 @@
                             android:drawablePadding="@dimen/normal_padding"
                             android:fontFamily="monospace"
                             android:gravity="center_vertical"
-                            android:text="@string/height_text"
+                            android:text="@string/location_text"
                             android:textColor="@color/black_text"
                             android:textSize="@dimen/default_text_subtitle_size"
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/height_value_textview"
+                            android:id="@+id/location_text_view"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="@dimen/detail_content_value_left_margin"
@@ -152,40 +152,13 @@
                             android:drawablePadding="@dimen/normal_padding"
                             android:fontFamily="monospace"
                             android:gravity="top"
-                            android:text="@string/power_text"
+                            android:text="@string/phone_text"
                             android:textColor="@color/black_text"
                             android:textSize="@dimen/default_text_subtitle_size"
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/power_value_textview"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="@dimen/detail_content_value_left_margin"
-                            android:fontFamily="monospace"
-                            android:textSize="@dimen/default_text_subtitle_size" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/mid_normal_padding"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:drawableLeft="@drawable/ic_ability"
-                            android:drawablePadding="@dimen/normal_padding"
-                            android:fontFamily="monospace"
-                            android:gravity="top"
-                            android:text="@string/ability_text"
-                            android:textColor="@color/black_text"
-                            android:textSize="@dimen/default_text_subtitle_size"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/ability_value_textview"
+                            android:id="@+id/phone_textview"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="@dimen/detail_content_value_left_margin"
@@ -197,25 +170,8 @@
 
             </android.support.v7.widget.CardView>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/normal_padding"
-                android:fontFamily="monospace"
-                android:paddingLeft="3dp"
-                android:text="@string/groups_text"
-                android:textColor="@color/black_text"
-                android:textSize="@dimen/title_section_text_size" />
-
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/recycler_chip"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-
         </LinearLayout>
 
-
     </android.support.v4.widget.NestedScrollView>
-
 
 </android.support.design.widget.CoordinatorLayout>
